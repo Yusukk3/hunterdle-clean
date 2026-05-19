@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Meruem silhouette">
+  <rect width="600" height="600" rx="42" fill="#03120c"/>
+  <circle cx="300" cy="270" r="210" fill="#10b981" opacity="0.08"/>
+  <g fill="#020403">
+    <path d="M300 90 Q215 105 205 220 Q165 270 205 340 Q235 420 300 440 Q365 420 395 340 Q435 270 395 220 Q385 105 300 90Z"/><path d="M205 220 L130 130 L230 175Z"/><path d="M395 220 L470 130 L370 175Z"/><path d="M245 430 L355 430 L405 540 L195 540Z"/><path d="M390 455 Q485 480 455 540 Q430 500 360 500Z"/>
+  </g>
+  <text x="300" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10b981" opacity="0.55">Meruem</text>
+</svg>

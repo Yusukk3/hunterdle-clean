@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Illumi silhouette">
+  <rect width="600" height="600" rx="42" fill="#03120c"/>
+  <circle cx="300" cy="270" r="210" fill="#10b981" opacity="0.08"/>
+  <g fill="#020403">
+    <ellipse cx="300" cy="260" rx="125" ry="170"/><path d="M210 150 Q300 30 390 150 L430 500 Q365 455 300 465 Q235 455 170 500Z"/><circle cx="260" cy="265" r="16"/><circle cx="340" cy="265" r="16"/><rect x="230" y="415" width="140" height="125" rx="35"/>
+  </g>
+  <text x="300" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10b981" opacity="0.55">Illumi</text>
+</svg>

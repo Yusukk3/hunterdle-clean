@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Hisoka silhouette">
+  <rect width="600" height="600" rx="42" fill="#03120c"/>
+  <circle cx="300" cy="270" r="210" fill="#10b981" opacity="0.08"/>
+  <g fill="#020403">
+    <path d="M300 95 L335 170 L420 125 L365 205 Q415 245 405 315 Q390 415 300 445 Q210 415 195 315 Q185 245 235 205 L180 125 L265 170Z"/><circle cx="250" cy="270" r="18"/><path d="M335 250 L380 305 L325 310Z"/><path d="M235 430 L365 430 L400 540 L200 540Z"/>
+  </g>
+  <text x="300" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10b981" opacity="0.55">Hisoka</text>
+</svg>

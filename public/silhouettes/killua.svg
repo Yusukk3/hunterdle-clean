@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Killua silhouette">
+  <rect width="600" height="600" rx="42" fill="#03120c"/>
+  <circle cx="300" cy="270" r="210" fill="#10b981" opacity="0.08"/>
+  <g fill="#020403">
+    <path d="M300 95 L255 145 L220 95 L230 170 L165 145 L220 215 Q190 245 190 305 Q190 400 300 435 Q410 400 410 305 Q410 245 380 215 L435 145 L370 170 L380 95 L345 145 Z"/><rect x="230" y="420" width="140" height="120" rx="38"/>
+  </g>
+  <text x="300" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10b981" opacity="0.55">Killua</text>
+</svg>

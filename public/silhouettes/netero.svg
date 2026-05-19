@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Netero silhouette">
+  <rect width="600" height="600" rx="42" fill="#03120c"/>
+  <circle cx="300" cy="270" r="210" fill="#10b981" opacity="0.08"/>
+  <g fill="#020403">
+    <circle cx="300" cy="235" r="115"/><path d="M210 190 Q300 60 390 190 Q350 155 300 158 Q250 155 210 190Z"/><path d="M230 330 Q300 400 370 330 Q345 470 300 480 Q255 470 230 330Z"/><rect x="215" y="420" width="170" height="120" rx="30"/><path d="M250 285 Q300 330 350 285 Q335 355 300 365 Q265 355 250 285Z"/>
+  </g>
+  <text x="300" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10b981" opacity="0.55">Netero</text>
+</svg>

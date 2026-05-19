@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Kurapika silhouette">
+  <rect width="600" height="600" rx="42" fill="#03120c"/>
+  <circle cx="300" cy="270" r="210" fill="#10b981" opacity="0.08"/>
+  <g fill="#020403">
+    <path d="M300 115 Q220 115 205 210 Q170 260 205 335 Q230 410 300 430 Q370 410 395 335 Q430 260 395 210 Q380 115 300 115Z"/><path d="M210 205 Q300 65 390 205 Q335 160 300 170 Q265 160 210 205Z"/><rect x="215" y="415" width="170" height="125" rx="20"/>
+  </g>
+  <text x="300" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10b981" opacity="0.55">Kurapika</text>
+</svg>

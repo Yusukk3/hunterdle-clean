@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-label="Pitou silhouette">
+  <rect width="600" height="600" rx="42" fill="#03120c"/>
+  <circle cx="300" cy="270" r="210" fill="#10b981" opacity="0.08"/>
+  <g fill="#020403">
+    <path d="M210 170 L160 70 L265 145 Q300 120 335 145 L440 70 L390 170 Q430 225 415 320 Q395 420 300 450 Q205 420 185 320 Q170 225 210 170Z"/><path d="M245 440 Q300 500 355 440 L385 540 L215 540Z"/>
+  </g>
+  <text x="300" y="555" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#10b981" opacity="0.55">Pitou</text>
+</svg>
