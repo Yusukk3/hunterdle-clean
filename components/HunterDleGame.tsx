@@ -1,5 +1,4 @@
 'use client';
-import confetti from "canvas-confetti";
 import { useEffect, useMemo, useState } from 'react';
 import { Search, Share2, RotateCcw, Trophy, User, Medal, Quote, Eye, Wand2, Database } from 'lucide-react';
 import { motion } from 'framer-motion';
