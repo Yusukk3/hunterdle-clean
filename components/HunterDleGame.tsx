@@ -134,51 +134,21 @@ export default function HunterDleGame() {
     if (hasSupabaseEnv) await supabase.from('leaderboard').upsert(row, { onConflict: 'player_name' });
   }
 
-  function submit(character: Character) {
+  function submitGuess(character: Character) {
   if (won) return;
 
   const next = [character, ...guesses];
   setGuesses(next);
-  setQuery('');
+  setQuery("");
 
   if (character.name === target.name) {
-
     setSuccess(true);
-confetti({
-  particleCount: 120,
-  spread: 80,
-  origin: { y: 0.6 },
-});
-    setTimeout(() => {
-      setSuccess(false);
-    }, 1200);
-
-    const earned = Math.max(100 - (next.length - 1) * 12, 25);
-    const nextScore = score + earned;
-    const nextStreak = streak + 1;
-
-    setScore(nextScore);
-    setStreak(nextStreak);
-
-    saveRanking(nextScore, nextStreak);
-
-    setMessage(`Acertou! Era ${target.name}. +${earned} pontos.`);
-
-  } else {
-
-    setShake(true);
-
-    setTimeout(() => {
-      setShake(false);
-    }, 500);
-
-    setMessage('Boa tentativa. Compare as pistas e tente outro personagem.');
   }
 }
 
-  function submitTyped() {
+ function submitTyped() {
     const exact = characters.find((c) => normalize(c.name) === normalize(query.trim()));
-    if (exact) submit(exact);
+    if (exact)submitGuess(exact);
     else setMessage('Escolha um personagem da lista de sugestões.');
   }
 
@@ -284,7 +254,7 @@ ${resultBlocks}
               </div>
               <Hint mode={mode} target={target} guesses={guesses} />
               <div className="mt-5 grid gap-4 lg:grid-cols-[1fr_auto] lg:items-end">
-                <div className="relative"><Search className="absolute left-4 top-3.5 text-zinc-500" size={20}/><input value={query} onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && submitTyped()} disabled={won} placeholder="Ex: Gon Freecss, Killua Zoldyck..." className="w-full rounded-2xl border border-zinc-800 bg-black/50 py-3 pl-12 pr-4 outline-none focus:ring-4 focus:ring-emerald-400/30" />{!!options.length && !won && <div className="absolute z-20 mt-2 w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 shadow-2xl">{options.map((c) => <button key={c.name} onClick={() => submit(c)} className="block w-full px-4 py-3 text-left hover:bg-emerald-500/15">{c.name}</button>)}</div>}</div>
+                <div className="relative"><Search className="absolute left-4 top-3.5 text-zinc-500" size={20}/><input value={query} onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && submitTyped()} disabled={won} placeholder="Ex: Gon Freecss, Killua Zoldyck..." className="w-full rounded-2xl border border-zinc-800 bg-black/50 py-3 pl-12 pr-4 outline-none focus:ring-4 focus:ring-emerald-400/30" />{!!options.length && !won && <div className="absolute z-20 mt-2 w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 shadow-2xl">{options.map((c) => <button key={c.name} onClick={() => submitGuess(c)} className="block w-full px-4 py-3 text-left hover:bg-emerald-500/15">{c.name}</button>)}</div>}</div>
                 <div className="flex gap-2"><button onClick={() => newRound(true, mode)} className={`rounded-2xl px-4 py-2 font-bold ${daily ? 'bg-emerald-500' : 'bg-zinc-800'}`}>Diário</button><button onClick={() => newRound(false, mode)} className={`rounded-2xl px-4 py-2 font-bold ${!daily ? 'bg-emerald-500' : 'bg-zinc-800'}`}><RotateCcw className="mr-2 inline" size={17}/>Livre</button></div>
               </div>
               <p className="mt-3 text-sm text-zinc-400">{message}</p>
