@@ -193,7 +193,11 @@ ${resultBlocks}
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
             <div>
               <div className="mb-2 inline-flex rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-200">Anime-only database</div>
-              <h1 className="text-5xl font-black tracking-tight md:text-7xl text-emerald-300 drop-shadow-[0_0_15px_rgba(16,185,129,0.7)]">HunterDle</h1>
+             <img
+  src="/images/hxh-logo.png"
+  alt="Hunter x Hunter"
+  className="h-20 md:h-28 object-contain drop-shadow-[0_0_18px_rgba(16,185,129,0.8)]"
+/>
               <p className="mt-2 max-w-2xl text-zinc-300">Adivinhe personagens do anime Hunter x Hunter. Projeto pronto para Supabase.</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-3 xl:min-w-[520px]">
