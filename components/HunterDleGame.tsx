@@ -196,7 +196,7 @@ ${resultBlocks}
              <img
   src="/images/hxh-logo.png"
   alt="Hunter x Hunter"
-  className="className="h-24 md:h-32 object-contain drop-shadow-[0_0_18px_rgba(16,185,129,0.8)]"
+  className="h-24 md:h-32 object-contain"
 />
               <p className="mt-2 max-w-2xl text-zinc-300">Teste seu conhecimento sobre personagens de Hunter x Hunter.</p>
             </div>
