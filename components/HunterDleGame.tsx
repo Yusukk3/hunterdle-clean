@@ -187,13 +187,13 @@ ${resultBlocks}
 }
 
   return (
-    <main className="min-h-screen bg-[url('/images/hunter-bg-v2.jpg')] bg-cover bg-center bg-fixed text-white">
+    <main className="min-h-screen bg-[linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),url('/images/hunter-bg-v2.jpg')] bg-cover bg-center bg-fixed text-white">
       <div className="mx-auto max-w-7xl space-y-6">
-        <header className="rounded-[2rem] border border-emerald-400/20 bg-black/40 p-6 shadow-2xl backdrop-blur">
+        <header className="rounded-[2rem] border border-emerald-400/20 bg-emerald-950/60 p-6 shadow-2xl backdrop-blur">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
             <div>
               <div className="mb-2 inline-flex rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-200">Anime-only database</div>
-              <h1 className="text-5xl font-black tracking-tight md:text-7xl">HunterDle</h1>
+              <h1 className="text-5xl font-black tracking-tight md:text-7xl text-emerald-300 drop-shadow-[0_0_15px_rgba(16,185,129,0.7)]">HunterDle</h1>
               <p className="mt-2 max-w-2xl text-zinc-300">Adivinhe personagens do anime Hunter x Hunter. Projeto pronto para Supabase.</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-3 xl:min-w-[520px]">
