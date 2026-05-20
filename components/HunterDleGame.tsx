@@ -187,7 +187,7 @@ ${resultBlocks}
 }
 
   return (
-    <main className="min-h-screen bg-[url('/images/hunter-bg.jpeg')] bg-cover bg-center bg-fixed text-white">
+    <main className="min-h-screen bg-[url('/images/hunter-bg-v2.jpg')] bg-cover bg-center bg-fixed text-white">
       <div className="mx-auto max-w-7xl space-y-6">
         <header className="rounded-[2rem] border border-emerald-400/20 bg-black/40 p-6 shadow-2xl backdrop-blur">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
