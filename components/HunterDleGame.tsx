@@ -196,7 +196,7 @@ ${resultBlocks}
              <img
   src="/images/hxh-logo.png"
   alt="Hunter x Hunter"
-  className="h-24 md:h-32 object-contain"
+  className="h-28 md:h-36 object-contain mx-auto drop-shadow-2xl"
 />
               <p className="mt-2 max-w-2xl text-zinc-300">Teste seu conhecimento sobre personagens de Hunter x Hunter.</p>
             </div>
@@ -213,7 +213,7 @@ ${resultBlocks}
       }
     }}
     placeholder="Digite um personagem..."
-    className="w-full rounded-2xl border border-zinc-800 bg-black/60 py-4 pl-12 pr-4 text-white outline-none transition focus:border-emerald-400/20"
+    className="rounded-[2rem] border border-emerald-400/20 bg-black/35 p-6 shadow-2xl backdrop-blur"
   />
 
   {query.length > 0 && suggestions.length > 0 && (
@@ -222,7 +222,7 @@ ${resultBlocks}
         <button
           key={character.name}
           onClick={() => submitGuess(character)}
-          className="flex w-full items-center justify-between px-4 py-3 text-left text-white transition hover:bg-emerald-500/20"
+          className="flex w-full items-center justify-between px-4 py-3 text-left text-white transition-all duration-300 hover:scale-[1.02] hover:bg-emerald-500/20"
         >
           <div>
             <p className="font-bold">{character.name}</p>
@@ -258,7 +258,7 @@ ${resultBlocks}
               </div>
               <Hint mode={mode} target={target} guesses={guesses} />
               <div className="mt-5 grid gap-4 lg:grid-cols-[1fr_auto] lg:items-end">
-                <div className="relative"><Search className="absolute left-4 top-3.5 text-zinc-500" size={20}/><input value={query} onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && submitTyped()} disabled={won} placeholder="Ex: Gon Freecss, Killua Zoldyck..." className="w-full rounded-2xl border border-zinc-800 bg-black/50 py-3 pl-12 pr-4 outline-none focus:ring-4 focus:ring-emerald-400/30" />{!!options.length && !won && <div className="absolute z-20 mt-2 w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 shadow-2xl">{options.map((c) => <button key={c.name} onClick={() => submitGuess(c)} className="block w-full px-4 py-3 text-left hover:bg-emerald-500/15">{c.name}</button>)}</div>}</div>
+                <div className="relative"><Search className="absolute left-4 top-3.5 text-zinc-500" size={20}/><input value={query} onChange={(e) => setQuery(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && submitTyped()} disabled={won} placeholder="Ex: Gon Freecss, Killua Zoldyck..." className="w-full rounded-2xl border border-zinc-800 bg-black/50 py-3 pl-12 pr-4 outline-none focus:ring-4 focus:ring-emerald-400/30" />{!!options.length && !won && <div className="absolute z-20 mt-2 w-full overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-950 shadow-2xl">{options.map((c) => <button key={c.name} onClick={() => submitGuess(c)} className="block w-full px-4 py-3 text-left transition-all duration-300 hover:scale-[1.02] hover:bg-emerald-500/15">{c.name}</button>)}</div>}</div>
                 <div className="flex gap-2"><button onClick={() => newRound(true, mode)} className={`rounded-2xl px-4 py-2 font-bold ${daily ? 'bg-emerald-500' : 'bg-zinc-800'}`}>Diário</button><button onClick={() => newRound(false, mode)} className={`rounded-2xl px-4 py-2 font-bold ${!daily ? 'bg-emerald-500' : 'bg-zinc-800'}`}><RotateCcw className="mr-2 inline" size={17}/>Livre</button></div>
               </div>
               <p className="mt-3 text-sm text-zinc-400">{message}</p>
