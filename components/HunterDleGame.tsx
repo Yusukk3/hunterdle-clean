@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect, useMemo, useState } from 'react';
 import { Search, Share2, RotateCcw, Trophy, User, Medal, Quote, Eye, Wand2, Database } from 'lucide-react';
 import { motion } from 'framer-motion';
@@ -186,7 +187,7 @@ ${resultBlocks}
 }
 
   return (
-    <main className="min-h-screen bg-[radial-gradient(circle_at_top,_#253d2e,_#08090a_60%)] p-4 text-zinc-100 md:p-8">
+    <main className="min-h-screen bg-[url('/images/hunter-bg.jpeg')] bg-cover bg-center bg-fixed text-white">
       <div className="mx-auto max-w-7xl space-y-6">
         <header className="rounded-[2rem] border border-emerald-400/20 bg-black/40 p-6 shadow-2xl backdrop-blur">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
