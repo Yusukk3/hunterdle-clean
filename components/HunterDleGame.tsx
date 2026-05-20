@@ -185,14 +185,27 @@ ${resultBlocks}
 
   alert("Resultado copiado! Agora é só colar no WhatsApp, X, Discord ou Instagram.");
 }
+<style jsx global>{`
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(8px) scale(0.96);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+`}</style>
+
 
   return (
     <main className="min-h-screen bg-[linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),url('/images/hunter-bg-v2.jpg')] bg-cover bg-center bg-fixed text-white">
       <div className="mx-auto max-w-7xl space-y-6">
         <header className="rounded-[2rem] border border-emerald-400/20 bg-emerald-950/60 p-6 shadow-2xl backdrop-blur">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
-            <div className="flex flex-col gap-4">
-              <div className="mb-2 inline-flex rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-200">Hunter x Hunter database</div>
+            <div className="flex flex-col items-start gap-4">
+              <div className="inline-flex items-center rounded-full bg-emerald-500/15 px-4 py-1 text-sm text-emerald-200 border border-emerald-400/20">Hunter x Hunter database</div>
              <img
   src="/images/hxh-logo.png"
   alt="Hunter x Hunter"
@@ -285,7 +298,11 @@ ${resultBlocks}
   className="rounded-3xl"
 ></motion.div>}
 
-            <div className="overflow-x-auto rounded-[1.5rem] border border-zinc-800 bg-black/40 shadow-2xl"><table className="w-full border-collapse text-sm"><thead className="bg-zinc-950 text-zinc-300"><tr><th className="sticky left-0 z-10 min-w-[170px] bg-zinc-950 px-4 py-4 text-left">Personagem</th>{FIELDS.map((f) => <th key={String(f.key)} className="min-w-[120px] px-3 py-4 text-center">{f.label}</th>)}</tr></thead><tbody>{guesses.length === 0 ? <tr><td colSpan={FIELDS.length + 1} className="px-4 py-12 text-center text-zinc-500">Nenhuma tentativa ainda.</td></tr> : guesses.map((g) => <tr key={g.name} className="border-t border-zinc-900"><td className="sticky left-0 z-10 bg-zinc-950 px-4 py-3 font-bold">{g.name}</td>{FIELDS.map((f) => <td key={String(f.key)} className="min-w-[120px] px-3 py-3 text-center"><div className={`rounded-xl px-3 py-2 text-sm font-semibold ${g[f.key] === target[f.key] ? 'bg-emerald-500 text-white' : 'bg-zinc-800 text-zinc-200 ring-1 ring-zinc-700'}`}>{String(g[f.key])}</div></td>)}</tr>)}</tbody></table></div>
+            <div className="overflow-x-auto rounded-[1.5rem] border border-zinc-800 bg-black/40 shadow-2xl"><table className="w-full border-collapse text-sm"><thead className="bg-zinc-950 text-zinc-300"><tr><th className="sticky left-0 z-10 min-w-[170px] bg-zinc-950 px-4 py-4 text-left">Personagem</th>{FIELDS.map((f) => <th key={String(f.key)} className="min-w-[120px] px-3 py-4 text-center">{f.label}</th>)}</tr></thead><tbody>{guesses.length === 0 ? <tr><td colSpan={FIELDS.length + 1} className="px-4 py-12 text-center text-zinc-500">Nenhuma tentativa ainda.</td></tr> : guesses.map((g) => <tr key={g.name} className="border-t border-zinc-900"><td className="sticky left-0 z-10 bg-zinc-950 px-4 py-3 font-bold">{g.name}</td>{FIELDS.map((f) => <td
+  key={String(f.key)}
+  style={{ animationDelay: `${FIELDS.indexOf(f) * 150}ms` }}
+  className="min-w-[120px] px-3 py-3 text-center opacity-0 animate-[fadeIn_1.4s_ease_forwards]"
+><div className={`rounded-xl px-3 py-2 text-sm font-semibold ${g[f.key] === target[f.key] ? 'bg-emerald-500 text-white' : 'bg-zinc-800 text-zinc-200 ring-1 ring-zinc-700'}`}>{String(g[f.key])}</div></td>)}</tr>)}</tbody></table></div>
           </section>
 
           <aside className="rounded-[2rem] border border-zinc-800 bg-zinc-950/80 p-5 shadow-xl"><div className="mb-4 flex items-center gap-2"><Medal className="text-emerald-300"/><h2 className="text-xl font-black">Ranking</h2></div><div className="space-y-3">{ranking.map((r, i) => <div key={r.player_name} className="flex items-center justify-between rounded-2xl border border-zinc-800 bg-black/30 p-3"><div><p className="font-bold">#{i + 1} {r.player_name}</p><p className="text-xs text-zinc-500">Streak {r.streak}</p></div><p className="text-lg font-black text-emerald-300">{r.score}</p></div>)}</div></aside>
