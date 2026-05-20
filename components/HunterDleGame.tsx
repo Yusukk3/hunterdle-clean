@@ -191,14 +191,14 @@ ${resultBlocks}
       <div className="mx-auto max-w-7xl space-y-6">
         <header className="rounded-[2rem] border border-emerald-400/20 bg-emerald-950/60 p-6 shadow-2xl backdrop-blur">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
-            <div>
-              <div className="mb-2 inline-flex rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-200">Anime-only database</div>
+            <div className="flex flex-col gap-4">
+              <div className="mb-2 inline-flex rounded-full bg-emerald-500/15 px-3 py-1 text-sm text-emerald-200">Hunter x Hunter database</div>
              <img
   src="/images/hxh-logo.png"
   alt="Hunter x Hunter"
-  className="h-20 md:h-28 object-contain drop-shadow-[0_0_18px_rgba(16,185,129,0.8)]"
+  className="className="h-24 md:h-32 object-contain drop-shadow-[0_0_18px_rgba(16,185,129,0.8)]"
 />
-              <p className="mt-2 max-w-2xl text-zinc-300">Adivinhe personagens do anime Hunter x Hunter. Projeto pronto para Supabase.</p>
+              <p className="mt-2 max-w-2xl text-zinc-300">Teste seu conhecimento sobre personagens de Hunter x Hunter.</p>
             </div>
             <div className="grid gap-3 sm:grid-cols-3 xl:min-w-[520px]">
               <div className="relative">
@@ -213,7 +213,7 @@ ${resultBlocks}
       }
     }}
     placeholder="Digite um personagem..."
-    className="w-full rounded-2xl border border-zinc-800 bg-black/60 py-4 pl-12 pr-4 text-white outline-none transition focus:border-emerald-400"
+    className="w-full rounded-2xl border border-zinc-800 bg-black/60 py-4 pl-12 pr-4 text-white outline-none transition focus:border-emerald-400/20"
   />
 
   {query.length > 0 && suggestions.length > 0 && (
