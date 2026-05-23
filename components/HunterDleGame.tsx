@@ -212,22 +212,9 @@ ${resultBlocks}
   className="h-28 md:h-36 object-contain mx-auto drop-shadow-2xl"
 />
               <p className="mt-2 max-w-2xl text-zinc-300">Teste seu conhecimento sobre personagens de Hunter x Hunter.</p>
-            </div>
+            
             <div className="grid gap-3 sm:grid-cols-3 xl:min-w-[520px]">
-              <div className="relative">
-  <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500" size={20} />
-
-  <input
-    value={query}
-    onChange={(e) => setQuery(e.target.value)}
-    onKeyDown={(e) => {
-      if (e.key === "Enter" && suggestions[0]) {
-        submitGuess(suggestions[0]);
-      }
-    }}
-    placeholder="Digite um personagem..."
-    className="rounded-[2rem] border border-emerald-400/20 bg-black/35 p-6 shadow-2xl backdrop-blur"
-  />
+              
 
   {query.length > 0 && suggestions.length > 0 && (
     <div className="absolute z-50 mt-2 w-full overflow-hidden rounded-2xl border border-emerald-500/30 bg-zinc-950 shadow-2xl">
