@@ -513,36 +513,6 @@ export const fallbackCharacters: Character[] = [
 },
 
 {
-  name: "Knov",
-  gender: "Masculino",
-  affiliation: "Associação Hunter",
-  nen_type: "Conjuração",
-  origin: "Desconhecida",
-  first_arc: "Formigas Quimera",
-  status: "Vivo",
-  role: "Hunter",
-  age_group: "Adulto",
-  quote: "Planejamento salva mais vidas que força.",
-  nen_hint: "Cria salas dimensionais escondidas.",
-  silhouetteImage: "/silhouettes/knov.svg",
-},
-
-{
-  name: "Knuckle Bine",
-  gender: "Masculino",
-  affiliation: "Associação Hunter",
-  nen_type: "Emissão",
-  origin: "Desconhecida",
-  first_arc: "Formigas Quimera",
-  status: "Vivo",
-  role: "Hunter",
-  age_group: "Adulto",
-  quote: "Você não vence só porque bate forte.",
-  nen_hint: "Empresta aura como se fosse dívida financeira.",
-  silhouetteImage: "/silhouettes/knuckle.svg",
-},
-
-{
   name: "Palm Siberia",
   gender: "Feminino",
   affiliation: "Associação Hunter",
