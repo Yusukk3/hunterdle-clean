@@ -202,18 +202,18 @@ ${resultBlocks}
   return (
     <main className="min-h-screen bg-[linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),url('/images/hunter-bg-v2.jpg')] bg-cover bg-center bg-fixed text-white">
       <div className="mx-auto max-w-7xl space-y-6">
-        <header className="rounded-[2rem] border border-emerald-400/20 bg-emerald-950/60 p-6 shadow-2xl backdrop-blur">
+        <header className="rounded-[2rem] border border-emerald-400/20 bg-emerald-950/45 p-5 shadow-xl backdrop-blur">
           <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
             <div className="flex flex-col items-start gap-4">
               <div className="inline-flex items-center rounded-full bg-emerald-500/15 px-4 py-1 text-sm text-emerald-200 border border-emerald-400/20">Hunter x Hunter database</div>
              <img
   src="/images/hxh-logo.png"
   alt="Hunter x Hunter"
-  className="h-28 md:h-36 object-contain mx-auto drop-shadow-2xl"
+  className="h-20 md:h-24 object-contain mx-auto drop-shadow-xl"
 />
               <p className="mt-2 max-w-2xl text-zinc-300">Teste seu conhecimento sobre personagens de Hunter x Hunter.</p>
             
-            <div className="grid gap-3 sm:grid-cols-3 xl:min-w-[520px]">
+            <div className="mt-5 grid max-w-md grid-cols-2 gap-3">
               
 
   {query.length > 0 && suggestions.length > 0 && (
