@@ -201,9 +201,9 @@ ${resultBlocks}
 
   return (
     <main className="min-h-screen bg-[linear-gradient(rgba(0,0,0,0.72),rgba(0,0,0,0.72)),url('/images/hunter-bg-v2.jpg')] bg-cover bg-center bg-fixed text-white">
-      <div className="mx-auto max-w-7xl space-y-6">
-        <header className="rounded-[2rem] border border-emerald-400/20 bg-emerald-950/45 p-5 shadow-xl backdrop-blur">
-          <div className="flex flex-col gap-5 xl:flex-row xl:items-center xl:justify-between">
+      <div className="mx-auto max-w-7xl space-y-4">
+        <header className="rounded-[2rem] border border-emerald-400/20 bg-emerald-950/60 px-6 py-4 shadow-2xl backdrop-blur">
+          <div className="flex flex-col gap-3 xl:flex-row xl:items-center xl:justify-between">
             <div className="flex flex-col items-start gap-4">
               <div className="inline-flex items-center rounded-full bg-emerald-500/15 px-4 py-1 text-sm text-emerald-200 border border-emerald-400/20">Hunter x Hunter database</div>
              <img
